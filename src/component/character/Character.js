@@ -1,5 +1,5 @@
 function Character(props) {
-    const {character} = props;
+    let {character} = props;
     return (
         <div>
             <h3>{character.id} -- {character.name} </h3>
