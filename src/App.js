@@ -1,12 +1,13 @@
 import './App.css';
-import Character from "./component/character/Character";
+import Characters from "./component/character/Characters";
+
 
 
 function App() {
   return (
       <div>
 
-<Character/>
+<Characters/>
 
       </div>
   );
