@@ -1,5 +1,6 @@
 import './App.css';
-import {Users} from "./component";
+import {Rockets} from "./component/rockets/Rockets";
+
 
 
 
@@ -7,7 +8,7 @@ import {Users} from "./component";
 function App() {
   return (
       <div>
-          <Users/>
+          <Rockets/>
       </div>
   );
 }
