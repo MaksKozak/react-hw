@@ -1,4 +1,3 @@
-export * from './albums.services'
-export * from './comments.services'
-export * from './posts.services'
-export * from './todos.services'
+export * from './auth.service'
+export * from './car.service'
+export * from './axiosService'

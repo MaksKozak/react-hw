@@ -1,29 +1,21 @@
-import {Routes, Route} from "react-router-dom";
-
-import {MainLayout} from "./layout/MainLayout";
-import {AlbumsPage} from "./pages/AlbumsPage";
-import {CommentsPage} from "./pages/CommentsPage";
-import {TodosPage} from "./pages/TodosPage";
-import {Posts} from "./components";
+import {Navigate, Route, Routes} from "react-router-dom";
+import {MainLayout} from "./layout";
+import {LoginPage, RegisterPage} from "./pages";
+import {CarsPage} from "./pages/CarsPage/CarsPage";
 
 
 function App() {
 
     return (
 
-        <div>
-
-            <Routes>
-                <Route path={'/'} element={<MainLayout/>}>
-                    <Route path={'albums'} element={<AlbumsPage/>}/>
-                    <Route path={'comments'} element={<CommentsPage/>}>
-                        <Route path={':postId'} element={<Posts/>}/>
-                    </Route>
-                    <Route path={'todos'} element={<TodosPage/>}/>
-                </Route>
-            </Routes>
-
-        </div>
+        <Routes>
+            <Route path={'/'} element={<MainLayout/>}>
+                <Route index element={<Navigate to={'/login'}/>}/>
+                <Route path={'/login'} element={<LoginPage/>}/>
+                <Route path={'/register'} element={<RegisterPage/>}/>
+                <Route path={'/cars'} element={<CarsPage/>}/>
+            </Route>
+        </Routes>
     );
 }
 
