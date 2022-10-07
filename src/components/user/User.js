@@ -1,8 +1,8 @@
-const PostsPage = () => {
+const User = () => {
     return (
         <div>
             
         </div>
     )
 }
-export {PostsPage};
+export {User};
