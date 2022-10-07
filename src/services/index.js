@@ -1,3 +1,4 @@
-export * from './auth.service'
-export * from './car.service'
-export * from './axiosService'
+export * from './axios.service'
+export * from './comments.service'
+export * from './posts.service'
+export * from './users.service'
