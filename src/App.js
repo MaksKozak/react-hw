@@ -1,14 +1,13 @@
-import {Header, Posts, Users} from "./components";
+import {CarForm, Cars} from "./components";
+
 
 function App() {
 
     return (
         <div>
-            <Header/>
-            <div>
-                <Users/>
-                <Posts/>
-            </div>
+            <CarForm/>
+            <hr/>
+            <Cars/>
         </div>
     );
 }
